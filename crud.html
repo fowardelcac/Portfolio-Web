@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/style/home.css">
+        <title>Crud</title>
+    </head>
+    <body>
+        <h1 id="Title">Crud App</h1>
+        <section>
+            <p>This is a CRUD project, and it can be defined as follows: CRUD is
+                an
+                acronym for Create, Read, Update, and Delete. Each of these
+                performs
+                a different operation, but they all aim to track and manage data
+                from a database. I developed this CRUD project using Python code
+                and
+                MySQL as the database. I used a library called SQLModel, which
+                is
+                similar to SQLAlchemy, but the key difference is its integration
+                with Pydantic.
+            </p>
+            <p> In my case, I chose this library because it is easier to
+                integrate
+                with FastAPI, as they share the same creator. This CRUD app is
+                designed for an ice cream shop, allowing the user to insert data
+                for
+                products and weekly purchases. It is a very simple database that
+                contains three tables:</p>
+
+            <p><ul>
+                    <li><p>Product: Contains all the possible products.</p></li>
+                    <li><p>Purchase: Records weekly purchases of raw
+                            materials.</p></li>
+                    <li><p>Receipt: Contains the receipt data. I created this
+                            table
+                            to
+                            minimize
+                            redundancy in the second table. Without it, if a
+                            weekly
+                            purchase
+                            includes 15 different ice cream flavors on the same
+                            receipt,
+                            the
+                            receipt data would be repeated 15 times.</p></li>
+                </ul></p>
+
+            <p> My Python code is organized into classes. Initially, I planned
+                to
+                create a class for each table, but then I realized that this
+                would
+                result in repetitive code (each class would have the same CRUD
+                operations). So, I changed my approach. I developed a class for
+                each
+                CRUD operation, so each class is responsible for just one CRUD
+                action. To test the application, I included tests using pytest,
+                which test each function.</p>
+            <p>
+                Here's the repository:
+                <a id="LatamRef"
+                    href="https://github.com/fowardelcac/Crud_And_SQLModel"
+                    target="_blank">
+                    Crud And SQLModel Repository
+                </a>
+            </p>
+
+        </section>
+
+        <section>
+            <h2 class="Subtitle">Entity Relationship Diagram</h2>
+            <div class="category-images">
+                <img src="assets/images/crud/ERD.png" alt="ERD"></div>
+        </section>
+    </body>
+</html>
